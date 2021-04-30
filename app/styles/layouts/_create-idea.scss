@@ -1,0 +1,41 @@
+@mixin font($family, $weight, $size, $color) {
+    font-family: $family;
+    font-weight: $weight;
+    font-size: $size;
+    color: $color;
+}
+
+.create {
+    width: 482px;
+    height: 158px;
+    .create__header {
+        text-align: center;
+    }
+    .create__desc {
+        @include font(Roboto, 300, 18px, #666666);
+        margin: 43px auto 25px auto;
+        text-align: center;
+    }
+    .create__form {
+        display: flex;
+        justify-content: space-between;
+        form {
+            width: 299px;
+            height: 40px;
+            padding: 14px 15px 10px 15px;
+            box-sizing: border-box;
+            @include font(Roboto, 300, 14px, #999999);
+            border: 1px solid #D4D4D4;
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+            border-radius: 3px;
+        }
+        button {
+            width: 172px;
+            height: 40px;
+            padding: 12px 25px 11px 30px;
+            @include font(Montserrat, 700, 14px, #FFFFFF);
+            background: #FF4E50;
+            border-radius: 40px;
+        }
+    }
+}

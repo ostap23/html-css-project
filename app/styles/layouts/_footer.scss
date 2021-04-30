@@ -1,0 +1,57 @@
+@mixin font($family, $weight, $size, $color) {
+    font-family: $family;
+    font-weight: $weight;
+    font-size: $size;
+    color: $color;
+}
+
+.line {
+    margin-top: 100px;
+    height: 2px;
+    width: 100%;
+    background: #FF4E50;
+}
+
+.footer {
+    height: 224px;
+    margin: 0 auto;
+    box-sizing: content-box;
+    display: flex;
+    flex-wrap: wrap;
+    &>div {
+        margin-top: 40px;
+    }
+    .footer__name {
+        @include font(Montserrat, 400, 16px, #FF4E50);
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .footer__company {
+        p {
+            margin-bottom: 11px;
+        }
+        @include font(Montserrat, 700, 14px, #444444);
+        ul {
+            list-style-type: none;
+            li {
+                margin-bottom: 8px;
+                @include font(Roboto, 300, 14px, #999999);
+            }
+        }
+    }
+    .footer__partners {
+        @include font(Montserrat, 700, 14px, #444444);
+    }
+    .footer__logo {
+        p {
+            text-align: end;
+            margin-bottom: 7px;
+            @include font(Montserrat, 700, 10px, #CCCCCC);
+        }
+        div {
+            width: 110px;
+            height: 24px;
+            background: url(../images/general/Logo.png);
+        }
+    }
+}

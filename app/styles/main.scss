@@ -1,0 +1,18 @@
+/*-------------------RESET__STYLES----------------------*/
+html,body{height: 100%;width: 100%;}
+*{padding: 0;margin: 0;border: 0;}
+:focus,:active{outline: none;}
+input,button{font-family: inherit;}
+button{cursor: pointer;background: none;}
+/*----------------------HEADER--------------------------*/
+@import 'layouts/header';
+/*------------------HOW__IT__WORKS----------------------*/
+@import 'layouts/how-it-works';
+/*---------------------PARTNERS-------------------------*/
+@import 'layouts/partners';
+/*----------------------IDEAS---------------------------*/
+@import 'layouts/ideas';
+/*-------------------CREATE__IDEA-----------------------*/
+@import 'layouts/create-idea';
+/*----------------------FOOTER--------------------------*/
+@import 'layouts/footer';

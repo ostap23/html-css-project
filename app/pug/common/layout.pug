@@ -1,0 +1,26 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        link(rel='preconnect', href='https://fonts.gstatic.com')
+        link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap', rel='stylesheet')
+        link(rel='preconnect', href='https://fonts.gstatic.com')
+        link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300&display=swap', rel='stylesheet')
+        title Document
+        link(rel='stylesheet', href='./css/main.min.css')
+        link(media='screen and (min-width: 1080px)', rel='stylesheet', href='./css/devices/screen-dreamshare.min.css')
+        link(media='screen and (max-width: 1080px) and (min-width: 540px)', rel='stylesheet', href='./css/devices/tablet-dreamshare.min.css')
+        link(media='screen and (max-width: 540px)', rel='stylesheet', href='./css/devices/mobile-dreamshare.min.css')
+    body
+        block header
+            include header
+        block how it works
+        block partners
+        block ideas
+        block create
+        block footer
+            include footer
+        block scripts
+            script(src='./js/main.min.js')

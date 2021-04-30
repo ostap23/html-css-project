@@ -1,0 +1,57 @@
+@mixin font($family, $style, $weight, $size, $color) {
+    font-family: $family;
+    font-style: $style;
+    font-weight: $weight;
+    font-size: $size;
+    color: $color;
+}
+
+header {
+    margin: 0 auto;
+}
+
+.header__top {
+    width: 100%;
+    display: flex;
+    .top__left {
+        @include font(Montserrat, normal, 700, 20px, #FFFFFF);
+    }
+    .top__right {
+        button {
+            background: none;
+            @include font(Montserrat, normal, 400, 14px, #FFFFFF);
+            margin: 0 1px;
+            border: 2px solid #ffffff00;
+            border-radius: 40px;
+            &:focus {
+                border: 2px solid #FFFFFF;
+                border-radius: 40px;
+            }
+        }
+    }
+}
+
+.header__main {
+    position: relative;
+    top: 145.5px;
+    >div {
+        margin-bottom: 26.5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include font(Montserrat, normal, 700, 52px, #FFFFFF);
+    }
+    >p {
+        @include font(Roboto, normal, 300, 24px, #F7F3F2);
+        margin-bottom: 32px;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    >button {
+        @include font(Montserrat, normal, bold, 14px, #FFFFFF);
+        padding: 12px 20px;
+        border-radius: 40px;
+        background: rgba(255, 78, 80, 1);
+    }
+}

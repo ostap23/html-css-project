@@ -1,0 +1,119 @@
+%image-size {
+    width: 120px;
+    height: 120px;
+}
+
+%user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+%circle {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    left: 88px;
+    top: 88px;
+}
+
+@mixin font($family, $style, $weight, $size, $height, $color) {
+    font-family: $family;
+    font-style: $style;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+    color: $color;
+}
+
+.partners {
+    margin: 95px auto 0 auto;
+    .partners__header {
+        margin: 0 auto 35px auto;
+        @include font(Montserrat, normal, 700, 26px, 32px, #444444)
+    }
+    .partners__persons {
+        display: flex;
+        >div:nth-child(1) {
+            div {
+                @extend %image-size; 
+                background: url(../images/general/Avatar-1.png);
+                .circle {
+                    @extend %circle;
+                    background: #FF4E50;
+                    img {
+                        position: relative;
+                        top: 7px;
+                    }
+                }
+            }
+        }
+        >div:nth-child(2) {
+            div {
+                @extend %image-size; 
+                background: url(../images/general/Avatar-2.png);
+                .circle {
+                    @extend %circle;
+                    background: #19D4CA;
+                    img {
+                        position: relative;
+                        top: 7px;
+                    }
+                }
+            }
+        }
+        >div:nth-child(3) {
+            div {
+                @extend %image-size; 
+                background: url(../images/general/Avatar-3.png);
+                .circle {
+                    @extend %circle;
+                    background: #FFA710;
+                    img {
+                        position: relative;
+                        top: 7px;
+                    }
+                }
+            } 
+        }
+        >div:nth-child(4) {
+            div {
+                @extend %image-size; 
+                background: url(../images/general/Avatar-4.png);
+                .circle {
+                    @extend %circle;
+                    background: #667DF3;
+                    img {
+                        position: relative;
+                        top: 3px;
+                    }
+                }
+            }
+        }
+        .person {
+            @extend %user;
+            p:nth-child(2) {
+                margin: 17px 0 12px 0;
+                @include font(Montserrat, normal, 700, 14px, 17px, #444444)
+            }
+        }
+        .person {
+            p:nth-child(3) {
+                @include font(Roboto, normal, 300, 14px, 14px, #666666)
+            }
+        }
+    }
+    button {
+        width: 180px;
+        margin: 48px auto 0 auto;
+        padding: 12px 0;
+        @include font(Montserrat, normal, 700, 14px, 17px, #FF4E50);
+        display: flex;
+        justify-content: center;
+        background: #FFFFFF;
+        border: 2px solid #FF4E50;
+        border-radius: 40px;
+    }
+}

@@ -1,0 +1,92 @@
+%flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+%first-p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    width: 46px;
+    background: #FF4E50;
+    border-radius: 40px;
+    margin-bottom: 22px;
+    padding: 5px 14px;
+}
+
+%second-p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+%third-p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 14px;
+    font-size: 14px;
+    color: #E3E3E3;
+    padding-top: 15px;
+}
+
+.instruction__header {
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.instruction__steps {
+    display: flex;
+    justify-content: center;
+    .step__1 {
+        >p:first-child{
+            @extend %first-p;
+            &+p {
+                @extend %second-p;
+            }
+        }
+        >p:last-child {
+            @extend %third-p;
+        }
+        @extend %flex;
+        margin-right: 20px;
+        background-image: url(../images/general/Step-1.png);
+    }
+    .step__2 {
+        >p:first-child{
+            @extend %first-p;
+            &+p {
+                @extend %second-p;
+            }
+        }
+        >p:last-child {
+            @extend %third-p;
+        }
+        @extend %flex;
+        background-image: url(../images/general/Step-2.png);
+    }
+    .step__3 {
+        >p:first-child{
+            @extend %first-p;
+            &+p {
+                @extend %second-p;
+            }
+        }
+        >p:last-child {
+            @extend %third-p;
+        }
+        @extend %flex;
+        margin-left: 20px;
+        background-image: url(../images/general/Step-3.png);
+    }
+}

@@ -1,0 +1,59 @@
+
+
+@mixin font($family, $weight, $size, $color) {
+    font-family: $family;
+    font-weight: $weight;
+    font-size: $size;
+    color: $color;
+}
+
+.ideas {
+    margin: 95px auto 0 auto;
+    height: 1031px;
+    .ideas__header {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 35px;
+    }
+    .ideas__box {
+        display: flex;
+        flex-wrap: wrap;
+        div {
+            font-family: Montserrat;
+            font-weight: 700;
+            font-size: 22px;
+            display: flex;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        div:nth-child(1) {
+            background: url(../images/general/Sport.png);
+            margin: 0 20px 20px 0;
+        }
+        div:nth-child(2) {
+            background: url(../images/general/Health.png);
+            margin: 0 20px 20px 0;
+        }
+        div:nth-child(3) {
+            background: url(../images/general/Extreme.png);
+            margin-bottom: 20px;
+        }
+        div:nth-child(4) {
+            background: url(../images/general/Games.png);
+            margin: 0 20px 20px 0;
+        }
+        div:nth-child(5) {
+            background: url(../images/general/Culture.png);
+            margin-bottom: 20px;
+        }
+        div:nth-child(6) {
+            background: url(../images/general/Relaxation.png);
+            margin-right: 20px;
+        }
+        div:nth-child(7) {
+            background: url(../images/general/Travelling.png);
+        }
+    }
+    
+}
+

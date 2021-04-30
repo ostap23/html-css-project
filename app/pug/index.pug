@@ -1,0 +1,97 @@
+extends common/layout
+
+block how it works
+  .instruction
+      .instruction__header How Dreamshare works?
+      .instruction__steps
+        .step__1
+            p STEP 1
+            p
+              | Sed leo enim,
+              br
+              |  condimentum
+            p
+              | Quisque libero libero, dictum non turpis
+              | in, luctus semper lorem. Donec rhoncus
+              | a leo sit amet facilisis.
+        .step__2
+            p STEP 2
+            p Morbi velit risus
+            p
+              | Nulla venenatis tempor dui in molestie.
+              | Nulla quis dictum purus, sit amet
+              | porttitor est.
+        .step__3
+            p STEP 3
+            p
+              | Sed leo enim,
+              br
+              |                     condimentum
+            p
+              | Quisque libero libero, dictum non turpis
+              | in, luctus semper lorem. Donec rhoncus
+              | a leo sit amet facilisis.
+
+block partners 
+ .partners
+  .partners__header Meet a partner for your best holiday
+  .partners__persons
+    .person
+      div
+        .circle
+          img(src='images/general/Music.png', alt='Music')
+      p Bradley Hunter
+      p
+        | Based in Chicago. I love playing
+        | tennis and loud music.
+    .person
+      div
+        .circle
+          img(src='images/general/Brush.png', alt='Brush')
+      p Marie Bennett
+      p
+        | Currently living in Colorado. Lover of
+        | art, languages and travelling.
+    .person
+      div
+        .circle
+          img(src='images/general/Camera.png', alt='Camera')
+      p Diana Wells
+      p
+        | Living in Athens, Greece. I love black
+        | and white classics, chillout music
+        | and green tea.
+    .person
+      div
+        .circle
+          img(src='images/general/Plane.png', alt='Airplane')
+      p Christopher Pierce
+      p
+        | Copy
+        | Star Wars fanatic. I have a
+        | persistent enthusiasm to create
+        | new things.
+  button See other partners
+
+block ideas
+    .ideas
+      .ideas__header Discover holiday activity ideas
+      .ideas__box
+        div Sports and Activis
+        div Wellness and Health
+        div
+          | Extreme Sports
+          | and Expeditions
+        div Games
+        div Culture and Education
+        div Enjomet and Relaxation
+        div Trevelling
+
+block create
+    .create
+      .create__header Crate your holiday activity
+      .create__desc Hi! What are your holiday interests?
+      .create__form
+        form(action='#')
+          input(type='text', placeholder='Enter your insterests')
+        button Search partners
